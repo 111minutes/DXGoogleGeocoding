@@ -19,4 +19,8 @@
                         failureBlock:(void(^)(NSError *error))failureBlock;
 
 
+//list of supported language codes see here https://spreadsheets.google.com/pub?key=p9pdwsai2hDMsLkXsoM05KQ&gid=1
+@property (nonatomic, strong) NSString *languageCode;   //the language in which to return results
+
+
 @end

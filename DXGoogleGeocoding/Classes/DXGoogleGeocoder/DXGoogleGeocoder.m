@@ -42,6 +42,14 @@ const NSString *cStatusOK = @"OK";
     return shared;
 }
 
+- (id)init {
+    self = [super init];
+    if (self) {
+        self.languageCode = nil;    //to use the native language of the domain from which the request is sent
+    }
+    return self;
+}
+
 - (void)reverseGeocodingWithLocation:(CLLocation *)location
                      completionBlock:(void(^)(NSArray *googleAddressesArray))completionBlock
                         failureBlock:(void(^)(NSError *error))failureBlock {
@@ -52,7 +60,13 @@ const NSString *cStatusOK = @"OK";
         return ;
     }
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/json?latlng=%f,%f&sensor=true", BASE_MAPS_GOOGLEAPIS_URL, location.coordinate.latitude, location.coordinate.longitude]];
+    NSString *urlString = [NSString stringWithFormat:@"%@/json?latlng=%f,%f&sensor=true", BASE_MAPS_GOOGLEAPIS_URL, location.coordinate.latitude, location.coordinate.longitude];
+    
+    if (self.languageCode.length != 0) {
+        urlString = [urlString stringByAppendingFormat:@"&language=%@", self.languageCode];
+    }
+    
+    NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
         

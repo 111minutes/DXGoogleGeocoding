@@ -65,13 +65,16 @@
     
     CLLocation *location = [[CLLocation alloc] initWithLatitude:latitude longitude:longitude];
     
+//    [[DXGoogleGeocoder shared] setLanguageCode:@"ru"];
+//    [[DXGoogleGeocoder shared] setLanguageCode:@"en"];
+    
     [[DXGoogleGeocoder shared] reverseGeocodingWithLocation:location completionBlock:^(NSArray *googleAddressesArray) {
         if (googleAddressesArray.count != 0) {
             DXGoogleAddress *googleAddress = [googleAddressesArray objectAtIndex:0];
             NSLog(@"Country : %@", googleAddress.country);
             NSLog(@"AdministrativeAreaLevel_1 : %@", googleAddress.administrativeAreaLevel_1);
             NSLog(@"City : %@", googleAddress.cityOrTown);
-        }        
+        }
     } failureBlock:^(NSError *error) {
         
     }];

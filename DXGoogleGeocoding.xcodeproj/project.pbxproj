@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9FB6DAD1626CCA5002262FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FB6DAC1626CCA5002262FB /* UIKit.framework */; };
+		C9FB6DAF1626CCA5002262FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FB6DAE1626CCA5002262FB /* Foundation.framework */; };
+		C9FB6DB11626CCA5002262FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FB6DB01626CCA5002262FB /* CoreGraphics.framework */; };
+		C9FB6DB71626CCA5002262FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9FB6DB51626CCA5002262FB /* InfoPlist.strings */; };
+		C9FB6DB91626CCA5002262FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FB6DB81626CCA5002262FB /* main.m */; };
+		C9FB6DBD1626CCA5002262FB /* DXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FB6DBC1626CCA5002262FB /* DXAppDelegate.m */; };
+		C9FB6DBF1626CCA5002262FB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FB6DBE1626CCA5002262FB /* Default.png */; };
+		C9FB6DC11626CCA5002262FB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FB6DC01626CCA5002262FB /* Default@2x.png */; };
+		C9FB6DC31626CCA5002262FB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FB6DC21626CCA5002262FB /* Default-568h@2x.png */; };
+		C9FB6DD61626CE07002262FB /* DXGoogleAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FB6DD51626CE07002262FB /* DXGoogleAddress.m */; };
+		C9FB6DD91626CE10002262FB /* DXGoogleGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FB6DD81626CE10002262FB /* DXGoogleGeocoder.m */; };
+		C9FB6DDB1626CE6F002262FB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FB6DDA1626CE6F002262FB /* CoreLocation.framework */; };
+		E212BE10763E4FEB8ED93F06 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 932541476390425AB6ED34E2 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		932541476390425AB6ED34E2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FB6DA81626CCA5002262FB /* DXGoogleGeocoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DXGoogleGeocoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FB6DAC1626CCA5002262FB /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9FB6DAE1626CCA5002262FB /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9FB6DB01626CCA5002262FB /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C9FB6DB41626CCA5002262FB /* DXGoogleGeocoding-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DXGoogleGeocoding-Info.plist"; sourceTree = "<group>"; };
+		C9FB6DB61626CCA5002262FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9FB6DB81626CCA5002262FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9FB6DBA1626CCA5002262FB /* DXGoogleGeocoding-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DXGoogleGeocoding-Prefix.pch"; sourceTree = "<group>"; };
+		C9FB6DBB1626CCA5002262FB /* DXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXAppDelegate.h; sourceTree = "<group>"; };
+		C9FB6DBC1626CCA5002262FB /* DXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXAppDelegate.m; sourceTree = "<group>"; };
+		C9FB6DBE1626CCA5002262FB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C9FB6DC01626CCA5002262FB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C9FB6DC21626CCA5002262FB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C9FB6DD41626CE07002262FB /* DXGoogleAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXGoogleAddress.h; sourceTree = "<group>"; };
+		C9FB6DD51626CE07002262FB /* DXGoogleAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXGoogleAddress.m; sourceTree = "<group>"; };
+		C9FB6DD71626CE10002262FB /* DXGoogleGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXGoogleGeocoder.h; sourceTree = "<group>"; };
+		C9FB6DD81626CE10002262FB /* DXGoogleGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXGoogleGeocoder.m; sourceTree = "<group>"; };
+		C9FB6DDA1626CE6F002262FB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CEBA59BBAEAC4234A8BD79CA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9FB6DA51626CCA5002262FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FB6DDB1626CE6F002262FB /* CoreLocation.framework in Frameworks */,
+				C9FB6DAD1626CCA5002262FB /* UIKit.framework in Frameworks */,
+				C9FB6DAF1626CCA5002262FB /* Foundation.framework in Frameworks */,
+				C9FB6DB11626CCA5002262FB /* CoreGraphics.framework in Frameworks */,
+				E212BE10763E4FEB8ED93F06 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9FB6D9D1626CCA5002262FB = {
+			isa = PBXGroup;
+			children = (
+				C9FB6DB21626CCA5002262FB /* DXGoogleGeocoding */,
+				C9FB6DAB1626CCA5002262FB /* Frameworks */,
+				C9FB6DA91626CCA5002262FB /* Products */,
+				CEBA59BBAEAC4234A8BD79CA /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		C9FB6DA91626CCA5002262FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9FB6DA81626CCA5002262FB /* DXGoogleGeocoding.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9FB6DAB1626CCA5002262FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9FB6DDA1626CE6F002262FB /* CoreLocation.framework */,
+				C9FB6DAC1626CCA5002262FB /* UIKit.framework */,
+				C9FB6DAE1626CCA5002262FB /* Foundation.framework */,
+				C9FB6DB01626CCA5002262FB /* CoreGraphics.framework */,
+				932541476390425AB6ED34E2 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9FB6DB21626CCA5002262FB /* DXGoogleGeocoding */ = {
+			isa = PBXGroup;
+			children = (
+				C9FB6DD01626CDFA002262FB /* Classes */,
+				C9FB6DBB1626CCA5002262FB /* DXAppDelegate.h */,
+				C9FB6DBC1626CCA5002262FB /* DXAppDelegate.m */,
+				C9FB6DB31626CCA5002262FB /* Supporting Files */,
+			);
+			path = DXGoogleGeocoding;
+			sourceTree = "<group>";
+		};
+		C9FB6DB31626CCA5002262FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9FB6DB41626CCA5002262FB /* DXGoogleGeocoding-Info.plist */,
+				C9FB6DB51626CCA5002262FB /* InfoPlist.strings */,
+				C9FB6DB81626CCA5002262FB /* main.m */,
+				C9FB6DBA1626CCA5002262FB /* DXGoogleGeocoding-Prefix.pch */,
+				C9FB6DBE1626CCA5002262FB /* Default.png */,
+				C9FB6DC01626CCA5002262FB /* Default@2x.png */,
+				C9FB6DC21626CCA5002262FB /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9FB6DD01626CDFA002262FB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C9FB6DD11626CDFA002262FB /* DXGoogleAddress */,
+				C9FB6DD21626CDFA002262FB /* DXGoogleGeocoder */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C9FB6DD11626CDFA002262FB /* DXGoogleAddress */ = {
+			isa = PBXGroup;
+			children = (
+				C9FB6DD41626CE07002262FB /* DXGoogleAddress.h */,
+				C9FB6DD51626CE07002262FB /* DXGoogleAddress.m */,
+			);
+			path = DXGoogleAddress;
+			sourceTree = "<group>";
+		};
+		C9FB6DD21626CDFA002262FB /* DXGoogleGeocoder */ = {
+			isa = PBXGroup;
+			children = (
+				C9FB6DD71626CE10002262FB /* DXGoogleGeocoder.h */,
+				C9FB6DD81626CE10002262FB /* DXGoogleGeocoder.m */,
+			);
+			path = DXGoogleGeocoder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9FB6DA71626CCA5002262FB /* DXGoogleGeocoding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9FB6DC61626CCA5002262FB /* Build configuration list for PBXNativeTarget "DXGoogleGeocoding" */;
+			buildPhases = (
+				C9FB6DA41626CCA5002262FB /* Sources */,
+				C9FB6DA51626CCA5002262FB /* Frameworks */,
+				C9FB6DA61626CCA5002262FB /* Resources */,
+				27470D32934E43398FEADFB4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DXGoogleGeocoding;
+			productName = DXGoogleGeocoding;
+			productReference = C9FB6DA81626CCA5002262FB /* DXGoogleGeocoding.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9FB6D9F1626CCA5002262FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DX;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = 111Minutes;
+			};
+			buildConfigurationList = C9FB6DA21626CCA5002262FB /* Build configuration list for PBXProject "DXGoogleGeocoding" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9FB6D9D1626CCA5002262FB;
+			productRefGroup = C9FB6DA91626CCA5002262FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9FB6DA71626CCA5002262FB /* DXGoogleGeocoding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9FB6DA61626CCA5002262FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FB6DB71626CCA5002262FB /* InfoPlist.strings in Resources */,
+				C9FB6DBF1626CCA5002262FB /* Default.png in Resources */,
+				C9FB6DC11626CCA5002262FB /* Default@2x.png in Resources */,
+				C9FB6DC31626CCA5002262FB /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27470D32934E43398FEADFB4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9FB6DA41626CCA5002262FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FB6DB91626CCA5002262FB /* main.m in Sources */,
+				C9FB6DBD1626CCA5002262FB /* DXAppDelegate.m in Sources */,
+				C9FB6DD61626CE07002262FB /* DXGoogleAddress.m in Sources */,
+				C9FB6DD91626CE10002262FB /* DXGoogleGeocoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9FB6DB51626CCA5002262FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9FB6DB61626CCA5002262FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9FB6DC41626CCA5002262FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9FB6DC51626CCA5002262FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9FB6DC71626CCA5002262FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEBA59BBAEAC4234A8BD79CA /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DXGoogleGeocoding/DXGoogleGeocoding-Prefix.pch";
+				INFOPLIST_FILE = "DXGoogleGeocoding/DXGoogleGeocoding-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9FB6DC81626CCA5002262FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEBA59BBAEAC4234A8BD79CA /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DXGoogleGeocoding/DXGoogleGeocoding-Prefix.pch";
+				INFOPLIST_FILE = "DXGoogleGeocoding/DXGoogleGeocoding-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9FB6DA21626CCA5002262FB /* Build configuration list for PBXProject "DXGoogleGeocoding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FB6DC41626CCA5002262FB /* Debug */,
+				C9FB6DC51626CCA5002262FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9FB6DC61626CCA5002262FB /* Build configuration list for PBXNativeTarget "DXGoogleGeocoding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FB6DC71626CCA5002262FB /* Debug */,
+				C9FB6DC81626CCA5002262FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9FB6D9F1626CCA5002262FB /* Project object */;
+}
